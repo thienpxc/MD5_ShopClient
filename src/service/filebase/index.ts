@@ -8,13 +8,13 @@ import {
 } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAVDLhDkjsJNI3l97DU9mONV60JASOfokA",
-  authDomain: "java-75075.firebaseapp.com",
-  projectId: "java-75075",
-  storageBucket: "java-75075.appspot.com",
-  messagingSenderId: "596834806177",
-  appId: "1:596834806177:web:edcffb86efbdd12fd283e0",
-  measurementId: "G-EMPYD4HQXR",
+  apiKey: "AIzaSyChXd5fqcIuz_o_ndwEyNYxgNhj8s4RZvU",
+  authDomain: "md05-ce05d.firebaseapp.com",
+  projectId: "md05-ce05d",
+  storageBucket: "md05-ce05d.appspot.com",
+  messagingSenderId: "441748675078",
+  appId: "1:441748675078:web:5f6d71c3f1850c55634187",
+  measurementId: "G-ZE1F99KK4X",
 };
 
 const app = initializeApp(firebaseConfig);
