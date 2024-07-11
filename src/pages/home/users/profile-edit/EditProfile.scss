@@ -1,0 +1,165 @@
+// .item1 {
+//   grid-area: header;
+// }
+// .item2 {
+//   grid-area: menu;
+// }
+// .item3 {
+//   grid-area: main;
+// }
+// .item4 {
+//   grid-area: right;
+// }
+// .item5 {
+//   grid-area: footer;
+// }
+// .item6 {
+//   grid-area: footer1;
+// }
+// .item7 {
+//   grid-area: footer2;
+// }
+// .item8 {
+//   grid-area: footer3;
+// }
+// .item9 {
+//   grid-area: footer4;
+// }
+
+// .grid-container {
+//   display: grid;
+//   grid-template-areas:
+//     "header header header menu menu menu menu"
+//     "header header header main main main main"
+//     "header header header right right right right"
+//     "footer footer footer footer1 footer1 footer1 footer1"
+//     "footer2 footer2 footer2 footer3 footer3 footer3 footer3"
+//     "footer4 footer4 footer4 footer4 footer4 footer4 footer4";
+//   gap: 10px;
+//   background-color: #2196f3;
+//   padding: 10px;
+//   max-width: 600px;
+//   margin: 0 auto;
+// }
+
+// .grid-container > div {
+//   background-color: rgba(255, 255, 255, 0.8);
+//   text-align: center;
+//   padding: 20px 0;
+//   font-size: 30px;
+// }
+.profile-title {
+  color: #666;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.edit-profile {
+  label {
+    display: inline-block;
+    width: 100px;
+    color: #666;
+  }
+  .form-actions {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button.cancel {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  button.save {
+    background-color: #337ab7;
+    color: white;
+  }
+
+  input,
+  select {
+    width: calc(100% - 100px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  display: grid;
+  grid-template-areas:
+    "photo photo name name name name"
+    "photo photo role role role role"
+    "photo photo birth birth birth birth"
+    "email email password password password password"
+    "phone phone status status status status"
+    "button button button button button button";
+
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  .profile-photo {
+    grid-area: photo;
+  }
+  .profile-name {
+    grid-area: name;
+  }
+  .profile-role {
+    grid-area: role;
+  }
+  .profile-birth {
+    grid-area: birth;
+  }
+  .profile-email {
+    grid-area: email;
+  }
+  .profile-password {
+    grid-area: password;
+  }
+  .profile-phone {
+    grid-area: phone;
+  }
+  .profile-status {
+    grid-area: status;
+  }
+  .profile-button {
+    grid-area: button;
+    margin-top: 10px;
+  }
+}
+
+.change-photo {
+  background-color: #5bc0de;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// select {
+//   background-color: white;
+// }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 100%;
+  }
+}

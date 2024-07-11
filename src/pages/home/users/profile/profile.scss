@@ -1,0 +1,129 @@
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
+  color: $text-color;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: $background-light;
+  padding: 20px;
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($background-light, 5%);
+    }
+
+    span {
+      margin-right: 10px;
+    }
+
+    .new-badge {
+      background-color: $secondary-color;
+      color: white;
+      font-size: 0.8em;
+      padding: 2px 5px;
+      border-radius: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    .stat-item {
+      text-align: center;
+
+      h3 {
+        margin: 0;
+        font-size: 1.5em;
+      }
+
+      p {
+        margin: 5px 0 0;
+        color: $text-color-light;
+      }
+    }
+  }
+
+  .barcode {
+    background-color: $background-light;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .info-box {
+      background-color: $background-lighter;
+      padding: 15px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .quick-actions {
+    display: flex;
+    justify-content: space-around;
+
+    .quick-action-item {
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

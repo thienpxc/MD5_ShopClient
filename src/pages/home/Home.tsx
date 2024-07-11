@@ -1,17 +1,28 @@
-import { StoreType } from '@/store';
-import React from 'react'
-import { useSelector } from 'react-redux'
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+import { Outlet } from "react-router-dom";
+
 
 export default function Home() {
-  const category = useSelector(
-    (state: StoreType) => {
-      return state.categoryStore;
-    }
-  );
-  console.log(category);
+  
   return (
-    <div>
-        <h1>hello</h1>
+    <div className="home_page">
+      <Header/>
+
+      {/* <select
+        className="form-select"
+        aria-label="Default select example"
+        value={selectedLanguage}
+        onChange={handleLanguageChange}
+      >
+        <option value="vi">VI</option>
+        <option value="en">EN</option>
+      </select> */}
+
+      <div className="home_page_container">
+        <Outlet></Outlet>
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }

@@ -1,0 +1,144 @@
+
+.wrapper{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d2dde9;
+  font-family: Arial, sans-serif;
+    
+}
+
+
+// Container chính
+.container-login {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+
+// Hình ảnh bên trái
+.containers {
+  display: flex;
+  gap: 20px;
+  
+  
+ 
+}
+
+.login {
+  flex: 1;
+
+  border: 3px solid #ebb5b5eb;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+  /* Thêm style cho phần login */
+}
+
+
+.image {
+  flex: 1;
+  object-fit: cover;
+  width: 51%;
+  
+
+ 
+
+}
+
+// Phần đăng nhập bên phải
+.container .login {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.login input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login button {
+  padding: 12px;
+  background-color: #c60e0e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.login button:hover {
+  background-color: #ff0000;
+}
+
+.login .social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.login .social-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login .social-buttons button:hover {
+  background-color: #e1e1e1;
+}
+
+.login .links {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login .links a {
+  color: #6f42c1;
+  text-decoration: none;
+}
+
+.login .links a:hover {
+  text-decoration: underline;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}

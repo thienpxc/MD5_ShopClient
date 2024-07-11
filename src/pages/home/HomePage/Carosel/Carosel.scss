@@ -1,0 +1,97 @@
+.carousel {
+  .container {
+    position: relative;
+    overflow: hidden; // Giữ cho các hình ảnh không hiển thị ra ngoài container
+
+    .mySlides {
+      width: 100%;
+      position: absolute;
+      transition: transform 0.5s ease-in-out; // Thêm hiệu ứng chuyển động mượt mà
+
+      &.active {
+        position: relative;
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block; // Đảm bảo hình ảnh hiển thị đúng cách
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+    
+      color: white;
+      padding: 8px;
+      border-radius: 0 50px 50px 0;
+
+      &:hover {
+        background-color: rgba(129, 126, 126, 0.8);
+      }
+    }
+
+    .next {
+      right: 0;
+      border-radius: 50px 0 0 50px;
+    }
+  }
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    max-width: 999px;
+    margin: 10px 16px 0px 19px;
+  
+
+    .thumbnail {
+      width: auto; // Đã điều chỉnh từ chiều rộng cố định thành tự động để vừa vặn nội dung
+      height: auto; // Đã điều chỉnh từ chiều cao cố định thành tự động để vừa vặn nội dung
+      margin: 0 5px;
+      opacity: 0.6;
+      cursor: pointer;
+      flex: 0 0 20%;
+
+      padding: 13px;
+      border-radius: 5px 5px 1px 1px; // Đã thêm để làm viền cong nếu cần
+      border: 2px solid rgba(0, 0, 0, 0.185); // Đã thêm viền để tạo hiệu ứng khi hover
+      transition: opacity 0.3s, border-color 0.3s; // Đã thay đổi 'border' thành 'border-color'
+      background-color: #fff; // Đã thêm màu nền
+
+      align-items: center; // Để căn chỉnh các phần tử theo chiều dọc trong mỗi thumbnail
+
+      &.active {
+        opacity: 1;
+        border-top-color:#ffffff;
+        border-right-color:#ffffff;
+        border-left-color:#ffffff;  
+        border-bottom: 3px solid #fa0000;
+        background-color: #ffffff; // Đã thêm màu nền
+        
+      }
+
+      &:hover {
+        opacity: 0.9;
+        background-color: #bebaba; // Một chút ít hơn hoàn toàn trong suốt khi hover để tạo hiệu ứng
+      }
+
+      .imager_des {
+        padding-left: auto;
+        color: black;
+        
+        font-size: auto;
+
+        &:first-child {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        
+      }
+    }
+  }
+}

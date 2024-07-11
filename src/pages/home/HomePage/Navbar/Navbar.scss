@@ -1,0 +1,72 @@
+//navbar.scss
+/* Navbar.css */
+.navbar {
+  width: 200px;
+  background-color: #f1f1f100;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 19px 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #e0e0e0;
+  color: red;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 20px;
+  z-index: 1000;
+  width: max-content;
+  max-width: 100vw;
+}
+
+.sub-menu-column {
+  margin-right: 30px;
+  min-width: 150px;
+}
+
+.sub-menu-column h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.sub-menu-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu-column li {
+  padding: 5px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.sub-menu-column li:hover {
+  color: red;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+}

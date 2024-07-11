@@ -1,0 +1,143 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d2dde9;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  max-width: 1064px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container {
+  flex: 1 0 10%; // Điều chỉnh chiều rộng của phần hình ảnh
+  background-color: #ff0000; // Màu đỏ cho phần hình ảnh
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1;
+  padding: 2rem;
+}
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+// .form-group input {
+//   width: 100%;
+//   padding: 0.5rem;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+// }
+.form-group {
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  transition: border-bottom-color 0.3s, border-bottom-width 0.3s;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-bottom: 2px solid red;
+}
+
+.form-group input:valid {
+  border-bottom: 2px solid red;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e22626;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.social-signup {
+  margin-top: 1rem;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+// Thêm style cho tiêu đề
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+// Style cho link
+.login-link a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+// Style cho thông báo lỗi
+.error-message {
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}

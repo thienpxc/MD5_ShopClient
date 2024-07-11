@@ -1,0 +1,132 @@
+.order-history {
+  display: flex;
+  font-family: Arial, sans-serif;
+
+  .sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #e0e0e0;
+        font-weight: bold;
+      }
+
+      .new-badge {
+        background-color: #ff4081;
+        color: white;
+        font-size: 0.8em;
+        padding: 2px 5px;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .snull-badge {
+        background-color: #ff4081;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 5px;
+        font-size: 0.8em;
+      }
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .date-range {
+      margin-bottom: 20px;
+    }
+
+    .order-filters {
+      display: flex;
+      margin-bottom: 20px;
+
+      button {
+        margin-right: 10px;
+        padding: 5px 10px;
+        border: none;
+        background-color: #f0f0f0;
+        cursor: pointer;
+
+        &.active {
+          background-color: #ff4081;
+          color: white;
+        }
+      }
+    }
+
+    .order-list {
+      .order-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0;
+
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          margin-right: 15px;
+        }
+
+        .order-details {
+          flex-grow: 1;
+
+          .status {
+            background-color: #e8f5e9;
+            color: #4caf50;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 0.8em;
+          }
+
+          .price {
+            color: #ff4081;
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+
+        .order-date {
+          color: #757575;
+          font-size: 0.9em;
+        }
+
+        .view-details {
+          color: #1976d2;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
